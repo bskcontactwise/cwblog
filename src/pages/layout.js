@@ -1,6 +1,6 @@
 import React from "react"
 import {createGlobalStyle,ThemeProvider} from "styled-components"
-import Theme from "./src/themes/theme"
+import Theme from "../themes/theme"
 
 const GlobalStyles = createGlobalStyle`
 *{
@@ -15,9 +15,11 @@ body,html{
 }
 
 `
-export const wrapRootElement =({element}) => {
+ const Layout =({element}) => {
     <ThemeProvider theme={Theme}>
         <GlobalStyles/>
-{element}
+{element()}
     </ThemeProvider>
 }
+
+export default Layout
