@@ -15,9 +15,10 @@ body,html{
 }
 
 `
-export const wrapRootElement =({element}) => {
+export const wrapRootElement =({element}) => (
     <ThemeProvider theme={Theme}>
-        <GlobalStyles/>
+    <GlobalStyles/>
 {element}
-    </ThemeProvider>
-}
+</ThemeProvider>
+)
+ 
