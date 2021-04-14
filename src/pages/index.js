@@ -1,12 +1,11 @@
 import React from "react"
-import {Container} from "../components"
+import {Container, FeatureImage} from "../components"
 
 export default function Home() {
   return (
     <Container>
 
-
-    ContactWise Blog
+<FeatureImage/>
    
     </Container>
   )
