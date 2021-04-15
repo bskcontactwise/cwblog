@@ -1,6 +1,6 @@
 import React from "react"
 import {useStaticQuery, graphql } from "gatsby"
-import {FooterWrapper, FooterSocialwrapper, FooterSocialIcons} from "../elements"
+import {FooterWrapper, FooterSocialwrapper, FooterSocialIcons, P} from "../elements"
 
 export const Footer = () => {
 const data = useStaticQuery(graphql`
@@ -36,7 +36,7 @@ query{
                     <img src={data.twitter.publicURL} alt="twitter logo"/>
                     </a>
             </FooterSocialIcons>
-            <p> 2020 company. All right reserved.</p>
+            <P size="xSmall" color="dark3"> 2020 company. All right reserved.</P>
         </FooterSocialwrapper>
 
     </FooterWrapper>
